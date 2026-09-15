@@ -12,7 +12,7 @@ Code and derived outputs for **“Corridor-Scale Landslide Susceptibility from a
 
 | Folder | Contents |
 |---|---|
-| `code/` | MATLAB and Python training, SVM calibration and mapping, segment analysis, and a QGIS station utility |
+| `code/` | MATLAB and Python training |
 | `models/` | Saved XGBoost model; MATLAB model objects are excluded |
 | `susceptibility_maps/` | RF, BLR, SVM and XGBoost probability rasters; XGBoost ensemble standard deviation |
 | `statistics/` | Test metrics, SVM calibration coefficients, feature importance and segment statistics |
