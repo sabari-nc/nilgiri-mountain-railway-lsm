@@ -1,0 +1,82 @@
+{
+  "note": "Raw XGBoost probabilities (no isotonic calibration). Threshold selected by Youden's J on VAL (TPR-FPR), robust to class imbalance from spatial block splitting.",
+  "predictors": [
+    "F1_slope_deg",
+    "F3_plan_curvature",
+    "F4_profile_curvature",
+    "F6_flow_accumulation",
+    "F9_convergence_index",
+    "F13_distance_to_drainage_m",
+    "F14_drainage_density_km_km2",
+    "aspect_sin",
+    "aspect_cos",
+    "lulc_10",
+    "lulc_30",
+    "lulc_40",
+    "lulc_50",
+    "lulc_60"
+  ],
+  "n_features": 14,
+  "train_rows_total": 2295,
+  "train_rows_inner": 1721,
+  "train_rows_calib": 574,
+  "val_rows": 1773,
+  "test_rows": 1365,
+  "class_counts": {
+    "train_pos": 1425,
+    "train_neg": 870,
+    "val_pos": 1009,
+    "val_neg": 764,
+    "test_pos": 550,
+    "test_neg": 815
+  },
+  "scale_pos_weight": 0.6099158091674463,
+  "best_iteration": 874,
+  "params": {
+    "eta": 0.05,
+    "max_depth": 3,
+    "min_child_weight": 5.0,
+    "subsample": 0.7,
+    "colsample_bytree": 0.7,
+    "reg_lambda": 5.0,
+    "reg_alpha": 0.5,
+    "gamma": 0.0,
+    "objective": "binary:logistic",
+    "eval_metric": [
+      "logloss",
+      "auc",
+      "aucpr"
+    ],
+    "scale_pos_weight": 0.6099158091674463,
+    "tree_method": "hist",
+    "seed": 42
+  },
+  "val": {
+    "roc_auc": 0.8268346660163243,
+    "pr_auc": 0.794811672857028
+  },
+  "test": {
+    "roc_auc": 0.7743692136084775,
+    "pr_auc": 0.597257479133109,
+    "threshold": 0.03474747474747475,
+    "confusion_matrix": {
+      "tp": 419,
+      "fp": 278,
+      "fn": 131,
+      "tn": 537
+    },
+    "n_pos_test": 550,
+    "n_neg_test": 815,
+    "accuracy": 0.7003663003663003,
+    "balanced_accuracy": 0.7103569436698272,
+    "precision": 0.6011477761836442,
+    "recall": 0.7618181818181818,
+    "f1": 0.6720128307939054,
+    "youden_j": 0.4207138873396542,
+    "brier": 0.28100451538723925
+  },
+  "threshold_method": "Youden's J (TPR-FPR) on VAL raw probabilities",
+  "threshold_val_j": 0.5520680368827152,
+  "threshold_test_j": 0.42071388733965426,
+  "pr_auc_method": "scikit-learn average_precision_score; manuscript PR-AUC uses MATLAB perfcurve"
+}

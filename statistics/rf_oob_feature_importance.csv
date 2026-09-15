@@ -1,0 +1,15 @@
+feature,oob_delta_error
+F1_slope_deg,2.69636469473646
+F6_flow_accumulation,1.57304252732023
+aspect_cos,1.38911224932205
+lulc_10,0.474843335301033
+F14_drainage_density_km_km2,0.460288446369898
+F13_distance_to_drainage_m,0.403804283395159
+aspect_sin,0.32750165012533
+lulc_30,0.262342222535802
+lulc_50,0.260817988470276
+F9_convergence_index,0.219502729259245
+F4_profile_curvature,0.0617658512244309
+F3_plan_curvature,0.0557324273521027
+lulc_40,0
+lulc_60,0

@@ -1,0 +1,42 @@
+{
+  "BLR": {
+    "roc_auc": 0.809,
+    "pr_auc": 0.651,
+    "brier": 0.177,
+    "threshold": 0.208,
+    "balanced_acc": 0.74,
+    "f1": 0.711,
+    "precision": 0.6,
+    "recall": 0.873
+  },
+  "SVM": {
+    "roc_auc": 0.737,
+    "pr_auc": 0.724,
+    "brier": 0.203,
+    "threshold": 0.356,
+    "balanced_acc": 0.707,
+    "f1": 0.647,
+    "precision": 0.661,
+    "recall": 0.635
+  },
+  "RF": {
+    "roc_auc": 0.839,
+    "pr_auc": 0.65,
+    "brier": 0.202,
+    "threshold": 0.219,
+    "balanced_acc": 0.818,
+    "f1": 0.786,
+    "precision": 0.701,
+    "recall": 0.893
+  },
+  "XGB": {
+    "roc_auc": 0.774,
+    "pr_auc": 0.596,
+    "brier": 0.281,
+    "threshold": 0.035,
+    "balanced_acc": 0.71,
+    "f1": 0.672,
+    "precision": 0.601,
+    "recall": 0.762
+  }
+}

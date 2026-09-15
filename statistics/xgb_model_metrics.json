@@ -1,0 +1,53 @@
+{
+  "XGB": {
+    "roc_auc": 0.7743692136084775,
+    "pr_auc": 0.597257479133109,
+    "brier": 0.28100451538723925,
+    "threshold": 0.03474747474747475,
+    "balanced_acc": 0.7103569436698272,
+    "f1": 0.6720128307939054,
+    "precision": 0.6011477761836442,
+    "recall": 0.7618181818186442,
+    "specificity": 0.658895214520736,
+    "tp": 419,
+    "fp": 278,
+    "fn": 131,
+    "tn": 537
+  },
+  "predictors": [
+    "F1_slope_deg",
+    "F3_plan_curvature",
+    "F4_profile_curvature",
+    "F6_flow_accumulation",
+    "F9_convergence_index",
+    "F13_distance_to_drainage_m",
+    "F14_drainage_density_km_km2",
+    "aspect_sin",
+    "aspect_cos",
+    "lulc_10",
+    "lulc_30",
+    "lulc_40",
+    "lulc_50",
+    "lulc_60"
+  ],
+  "params": {
+    "eta": 0.05,
+    "max_depth": 3,
+    "min_child_weight": 5.0,
+    "subsample": 0.7,
+    "colsample_bytree": 0.7,
+    "reg_lambda": 5.0,
+    "reg_alpha": 0.5,
+    "gamma": 0.0,
+    "objective": "binary:logistic",
+    "eval_metric": [
+      "logloss",
+      "auc",
+      "aucpr"
+    ],
+    "scale_pos_weight": 0.6099158091674463,
+    "tree_method": "hist",
+    "seed": 42
+  },
+  "pr_auc_method": "scikit-learn average_precision_score; manuscript PR-AUC uses MATLAB perfcurve"
+}

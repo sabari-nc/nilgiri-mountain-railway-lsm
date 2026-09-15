@@ -1,0 +1,16 @@
+{
+  "F1_slope_deg": 10.977437973022461,
+  "F3_plan_curvature": 0.690218985080719,
+  "F4_profile_curvature": 0.6748449206352234,
+  "F6_flow_accumulation": 4.964345455169678,
+  "F9_convergence_index": 0.7097636461257935,
+  "F13_distance_to_drainage_m": 1.7114605903625488,
+  "F14_drainage_density_km_km2": 2.6747753620147705,
+  "aspect_sin": 0.6601824760437012,
+  "aspect_cos": 3.0671579837799072,
+  "lulc_10": 0.0,
+  "lulc_30": 0.0,
+  "lulc_40": 0.0,
+  "lulc_50": 0.0,
+  "lulc_60": 0.0
+}
